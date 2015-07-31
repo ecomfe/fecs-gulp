@@ -1,0 +1,37 @@
+{
+  "name": "fecs-gulp",
+  "description": "fecs for gulp",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ecomfe/fecs-gulp",
+  "author": "fental <fengeeker@gmail.com> ",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ecomfe/fecs-gulp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ecomfe/fecs-gulp/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "lint": "fecs tasks",
+    "test": "npm run lint && gulp test"
+  },
+  "dependencies": {
+    "fecs": "^0.4.2"
+  },
+  "devDependencies": {
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gulpplugin"
+  ],
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  }
+}
