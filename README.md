@@ -20,32 +20,15 @@ var fecs = require('fecs-gulp');
 
 // use check like this
 // fecs(stream, options)
-// options选项参考fecs的cli，没有options参数默认是check操作
-gulp.task('check', function () {
-    return fecs(
-        gulp.src('*'),
-            // .pipe(/*...*/)
-            // .pipe(/*...*/)
-            // .pipe(/*...*/)
-            // .pipe(gulp.dest('outputFolder')),
-        {
-            command: 'check'
-        }
-    );
-});
-
-// use format like this
-gulp.task('format', function () {
-    return fecs(
-        gulp.src('*'),
-            // .pipe(/*...*/)
-            // .pipe(/*...*/)
-            // .pipe(/*...*/)
-            // .pipe(gulp.dest('outputFolder')),
-        {
-            command: 'format',
-            output: './output'
-        }
+// options选项参考fecs的cli
+gulp.task('task1', function () {
+    return gulp.src(['js/fuck.js', 'js/index.js'])
+            .pipe(fecs.check({
+                rule: true,
+                reporter: 'baidu'
+            }))
+            .pipe(fecs.format())
+            .pipe(gulp.dest('./output'));
     );
 });
 ```
