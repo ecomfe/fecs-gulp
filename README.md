@@ -23,12 +23,12 @@ var fecs = require('fecs-gulp');
 // options选项参考fecs的cli
 gulp.task('task1', function () {
     return gulp.src(['js/fuck.js', 'js/index.js'])
-            .pipe(fecs.check({
-                rule: true,
-                reporter: 'baidu'
-            }))
-            .pipe(fecs.format())
-            .pipe(gulp.dest('./output'));
+        .pipe(fecs.check({
+            rule: true,
+            reporter: 'baidu'
+        }))
+        .pipe(fecs.format())
+        .pipe(gulp.dest('./output'));
     );
 });
 ```
