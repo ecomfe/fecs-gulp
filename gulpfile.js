@@ -1,22 +1,10 @@
-# fecs-gulp
+/**
+ * @file gulpfile 入口文件
+ * @author Fental<fengeeker@gmail.com>
+ */
 
-> fecs for gulp
-
-## Getting Started
-Install this plugin with this command:
-
-```shell
-npm install fecs-gulp --save-dev
-```
-
-## Usage
-
-### Overview
-In your project's gulpfile.js.
-
-```js
 var gulp = require('gulp');
-var fecs = require('fecs-gulp');
+var fecs = require('./index.js');
 
 gulp.task('test', function () {
     return gulp.src(['./test/css/*', './test/html/*', './test/js/*'])
@@ -46,13 +34,5 @@ gulp.task('test', function () {
         ))
         .pipe(gulp.dest('./test/output'));
 });
-```
 
-### Options
 
-[fecs-options](https://github.com/ecomfe/fecs/wiki/CLI)
-
-## Contributing
-
-## Release History
-_(Nothing yet)_
