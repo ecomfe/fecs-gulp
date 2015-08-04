@@ -6,3 +6,4 @@
 'use strict';
 exports.check = require('./lib/check');
 exports.format = require('./lib/format');
+exports.reporter = require('./lib/reporter');

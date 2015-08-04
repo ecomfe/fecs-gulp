@@ -16,7 +16,7 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
-    "lint": "fecs index.js",
+    "lint": "fecs index.js lib",
     "test": "npm run lint && gulp test"
   },
   "dependencies": {
