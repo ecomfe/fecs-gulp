@@ -23,10 +23,24 @@ gulp.task('test', function () {
         .pipe(
             // 这么写reporter的配置都是默认的
             // fecs.reporter()
-            fecs.reporter({
-                // reporter: 'baidu',
-                // reporter: require('fecs/lib/reporter/baidu'),
-                reporter: '',
+
+            // ''意味着'default'
+            // fecs.reporter('')
+
+            // fecs.reporter('baidu')
+
+            // fecs.reporter(require('fecs/lib/reporter/baidu'))
+
+            // fecs.reporter({
+            //     reporter: '',
+            //     // reporter: 'baidu',
+            //     // reporter: require('fecs/lib/reporter/baidu'),
+            //     color: true,
+            //     rule: true,
+            //     sort: true
+            // })
+
+            fecs.reporter('baidu', {
                 color: true,
                 rule: true,
                 sort: true
