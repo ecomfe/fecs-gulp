@@ -21,8 +21,7 @@
   },
   "dependencies": {
     "fecs": "^0.4.2",
-    "merge": "^1.2.0",
-    "through2": "^2.0.0"
+    "merge": "^1.2.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0"
