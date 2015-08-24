@@ -16,16 +16,15 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
-    "lint": "fecs tasks",
+    "lint": "fecs index.js lib",
     "test": "npm run lint && gulp test"
   },
   "dependencies": {
-    "fecs": "^0.4.2"
+    "fecs": "^0.4.2",
+    "merge": "^1.2.0"
   },
   "devDependencies": {
-  },
-  "peerDependencies": {
-    "grunt": "~0.4.5"
+    "gulp": "^3.9.0"
   },
   "keywords": [
     "gulpplugin"
