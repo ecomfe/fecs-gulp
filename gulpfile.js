@@ -25,7 +25,7 @@ gulp.task('test', function () {
             // fecs.reporter()
 
             // fecs.reporter('')
-            // fecs.reporter('default');
+            // fecs.reporter('default')
 
             // fecs.reporter('baidu')
 
