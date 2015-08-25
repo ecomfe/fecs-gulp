@@ -36,17 +36,14 @@ gulp.task('test', function () {
             // 这么写reporter的配置都是默认的
             // fecs.reporter()
 
-            // ''意味着'default'
             // fecs.reporter('')
+            // fecs.reporter('default');
 
             // fecs.reporter('baidu')
 
             // fecs.reporter(require('fecs/lib/reporter/baidu'))
 
-            // fecs.reporter({
-            //     reporter: '',
-            //     // reporter: 'baidu',
-            //     // reporter: require('fecs/lib/reporter/baidu'),
+            // fecs.reporter('default', {
             //     color: true,
             //     rule: true,
             //     sort: true
@@ -57,6 +54,7 @@ gulp.task('test', function () {
                 rule: true,
                 sort: true
             })
+
         )
         .pipe(fecs.format(
             // 可以没有options参数
