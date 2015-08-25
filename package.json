@@ -20,8 +20,9 @@
     "test": "npm run lint && gulp test"
   },
   "dependencies": {
-    "fecs": "^0.4.2",
-    "merge": "^1.2.0"
+    "fecs": "*",
+    "merge": "^1.2.0",
+    "gulp-util": "^3.0.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0"
