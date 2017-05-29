@@ -17,12 +17,15 @@
   },
   "scripts": {
     "lint": "fecs index.js lib",
-    "test": "npm run lint && gulp test"
+    "test": "npm run lint && gulp test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "fecs": "*",
     "merge": "^1.2.0",
-    "gulp-util": "^3.0.0"
+    "gulp-util": "^3.0.0",
+    "snyk": "^1.31.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0"
@@ -33,5 +36,6 @@
   "main": "index.js",
   "directories": {
     "test": "test"
-  }
+  },
+  "snyk": true
 }
